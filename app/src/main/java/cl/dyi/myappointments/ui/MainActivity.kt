@@ -7,6 +7,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
 import cl.dyi.myappointments.R
+import cl.dyi.myappointments.RegistroPacienteActivity
 
 import cl.dyi.myappointments.io.ApiService
 import cl.dyi.myappointments.util.PreferenceHelper
@@ -56,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         tvGoToRegister.setOnClickListener {
             Toast.makeText(this, getString(R.string.please_fill_your_register_data), Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, RegisterActivity::class.java)
+            val intent = Intent(this, RegistroPacienteActivity::class.java)
             startActivity(intent)
         }
     }

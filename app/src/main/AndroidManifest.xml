@@ -13,13 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.ProfileActivity"></activity>
+        <activity android:name=".RegistroPacienteActivity"></activity>
+        <activity android:name=".ui.ProfileActivity" />
         <activity
             android:name=".ui.AppointmentsActivity"
-            android:parentActivityName=".ui.MenuActivity"></activity>
+            android:parentActivityName=".ui.MenuActivity" />
         <activity
             android:name=".ui.CreateAppointmentActivity"
-            android:parentActivityName=".ui.MenuActivity"></activity>
+            android:parentActivityName=".ui.MenuActivity" />
         <activity android:name=".ui.MenuActivity" />
         <activity
             android:name=".ui.RegisterActivity"
@@ -29,6 +30,7 @@
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -40,8 +42,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
-
     </application>
 
 </manifest>
